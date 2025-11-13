@@ -9,9 +9,24 @@ function App() {
   const [showMain, setShowMain] = useState(false);
   const [animatingTransition, setAnimatingTransition] = useState(false);
   const introRef = useRef(null);
-  const shapeWrapRef = useRef(null);
-  const shapeRef = useRef(null);
-  const pathRef = useRef(null);
+
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+
+    if (showIntro) {
+      if (html) html.style.overflow = 'hidden';
+      if (body) body.style.overflow = 'hidden';
+    } else {
+      if (html) html.style.overflow = '';
+      if (body) body.style.overflow = '';
+    }
+
+    return () => {
+      if (html) html.style.overflow = '';
+      if (body) body.style.overflow = '';
+    };
+  }, [showIntro]);
 
   useEffect(() => {
     // Set up global variables needed by background.js and main.js
@@ -122,46 +137,21 @@ function App() {
     
     // Mark page as switched (stops background.js mouse events)
     window.switchPage.switched = true;
-    
-    // Change background color
-    const contentInner = document.querySelector('.content-inner');
-    const shape = document.querySelector('.shape');
-    if (contentInner) contentInner.style.background = 'unset';
-    if (shape) shape.style.fill = '#1e1f21';
 
-    // Animate intro section out
+    // Animate intro section out with fade
     const intro = introRef.current;
-    const shapeWrap = shapeWrapRef.current;
-    const shapeSvg = shapeRef.current;
-    const path = pathRef.current;
 
-    if (intro && shapeSvg && path) {
-      shapeSvg.style.transformOrigin = '50% 0%';
-
+    if (intro) {
       anime({
         targets: intro,
-        duration: 1100,
-        easing: 'easeInOutSine',
-        translateY: '-200vh',
+        duration: 800,
+        easing: 'easeInOutQuad',
+        opacity: [1, 0],
+        scale: [1, 0.95],
         complete: () => {
           setShowIntro(false);
           setShowMain(true);
         }
-      });
-
-      anime({
-        targets: shapeSvg,
-        scaleY: [
-          { value: [0.8, 1.8], duration: 550, easing: 'easeInQuad' },
-          { value: 1, duration: 550, easing: 'easeOutQuad' }
-        ]
-      });
-
-      anime({
-        targets: path,
-        duration: 1100,
-        easing: 'easeOutQuad',
-        d: path.getAttribute('pathdata-id')
       });
     }
   };
@@ -171,15 +161,6 @@ function App() {
       {showIntro && (
         <div ref={introRef}>
           <IntroSection onEnter={handleEnter} />
-          <div ref={shapeWrapRef} className="shape-wrap">
-            <svg ref={shapeRef} className="shape" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
-              <path 
-                ref={pathRef}
-                d="M-44-50C-52.71 28.52 15.86 8.186 184 14.69 383.3 22.39 462.5 12.58 638 14 835.5 15.6 987 6.4 1194 13.86 1661 30.68 1652-36.74 1582-140.1 1512-243.5 15.88-589.5-44-50Z" 
-                pathdata-id="M -44,-50 C -137.1,117.4 67.86,445.5 236,452 435.3,459.7 500.5,242.6 676,244 873.5,245.6 957,522.4 1154,594 1593,753.7 1793,226.3 1582,-126 1371,-478.3 219.8,-524.2 -44,-50 Z"
-              ></path>
-            </svg>
-          </div>
         </div>
       )}
       
