@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /blog/categories/
+Allow: /blog/tags/
+Allow: /blog/posts/
+Allow: /blog/archives/
+Disallow: /blog/js/
+Disallow: /blog/css/
+Disallow: /blog/admin/
+Disallow: /images/
+
+Sitemap: http://simonaking.com/blog/sitemap.xml
+Sitemap: https://simonaking.com/blog/post-sitemap.xml
+Sitemap: https://simonaking.com/blog/page-sitemap.xml
+Sitemap: https://simonaking.com/blog/category-sitemap.xml
+Sitemap: https://simonaking.com/blog/tag-sitemap.xml
