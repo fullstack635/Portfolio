@@ -30,8 +30,21 @@ const BackgroundCanvas = () => {
       script.onload = () => {
         scriptLoadedRef.current = true;
         console.log('✅ WebGL fluid simulation loaded');
-        console.log('switchPage:', window.switchPage);
-        console.log('Pointers:', window.pointers);
+        
+        // Manually trigger initialization since DOMContentLoaded already fired
+        // The background.js listens to visibilitychange event, so we dispatch it
+        if (typeof Event === 'function') {
+          // Create and dispatch a visibility change event to trigger initialization
+          const event = new Event(window.visibilityChangeEvent || 'visibilitychange');
+          window.dispatchEvent(event);
+        } else {
+          // Fallback: directly call the init function if it exists
+          if (window._initBackground && typeof window._initBackground === 'function') {
+            window._initBackground();
+          }
+        }
+        
+        console.log('Animation initialized');
       };
 
       script.onerror = () => {
