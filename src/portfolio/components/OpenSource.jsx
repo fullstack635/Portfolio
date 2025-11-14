@@ -76,16 +76,16 @@ const OpenSource = () => {
 
   return (
     <section id="openSrc" className="bg-primaryLinear mx:3 sm:px-16 px-6 py-4">
-      <motion.div
+      {/* <motion.div
         whileInView={{ y: [-20, 0], opacity: [0, 1] }}
         transition={{ duration: 1, type: 'spring', stiffness: "120" }}
       >
         <h1 className="flex-1 pl-2 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] ss:leading-[80px] leading-[80px]">
           Open Source Contributions
         </h1>
-      </motion.div>
+      </motion.div> */}
 
-      <div className="py-5 mb-8 flex justify-center">
+      {/* <div className="py-5 mb-8 flex justify-center">
         <div className="grid grid-cols-1 justify-center gap-8 mt-4 md:mt-8 tablet:grid-cols-2 laptop:grid-cols-3 sm:grid-cols-2">
           {OPEN_SOURCE_CONTRIBUTIONS.map((contribution, index) => {
             return <Contribution
@@ -95,7 +95,7 @@ const OpenSource = () => {
             />
           })}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

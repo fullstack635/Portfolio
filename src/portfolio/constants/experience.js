@@ -20,25 +20,25 @@ export const EXPERIENCES = [
   {
     organisation: "Flipkart",
     logo: flipkart,
-    link: "https://www.flipkart.com/",
+    link: "",
     positions: [
       {
-        title: "Software Development Engineer",
-        duration: "Oct 2024"
+        title: "Full Stack developer",
+        duration: "May 2024-Current "
       },
     ],
   },
   {
-    organisation: "Appleute",
+    organisation: "Freelance",
     logo: appleute,
-    link: "https://www.appleute.de/en/",
+    link: "",
     positions: [
       {
-        title: "Software Engineering Intern (Remote)",
-        duration: "May-2024 - Current",
+        title: "Ecommerce Site Developer (Remote)",
+        duration: "Jan 2023-May 2024",
         content: [
           {
-            text: "Working on Full stack projects and App development with Agile Methodology.",
+            text: "Audited and optimized smart contracts to minimize gas costs and improve security posture.",
             tech: [
               {
                 id: "f-2",
@@ -82,17 +82,17 @@ export const EXPERIENCES = [
     ],
   },
   {
-    organisation: "TRI NIT Hackathon",
+    organisation: "CryptoX Labs",
     logo: TriNit,
-    link: "https://github.com/TRI-NIT",
+    link: " ",
     positions: [
       {
-        title: "Web Developer",
-        duration: "Jan 2023",
+        title: "Cryptocurrency Web Developer",
+        duration: "Mar 2021-Aug 2022",
         content: [
           {
-            text: "Contributed to Tri-Nit hackathon website.",
-            link: "https://github.com/TRI-NIT",
+            text: "Built decentralized apps (dApps) for Ethereum-based tokens and NFT platforms using React and Solidity",
+            link: "",
             tech: [
               {
                 id: "f-1",
@@ -111,36 +111,36 @@ export const EXPERIENCES = [
     ],
   },
   {
-    organisation: "ACM NITK",
+    organisation: "TechBridge Agency",
     logo: acm,
-    link: "https://github.com/TRI-NIT",
+    link: "",
     positions: [
       {
         title: "Project Mentor",
-        duration: "Jan 2023",
+        duration: "Sep 2020-Jan 2021",
         content: [
           {
-            text: "Mentored team on a 'Online code editor' project.",
+            text: "Implemented Vercel-based CI/CD pipelines for instant preview links and auto-deployments.",
             link: "https://github.com/Amruth-S05/Online-Code-Editor",
           },
         ],
       },
       {
         title: "DSA mentor",
-        duration: "May 2022",
+        duration: "Feb-Jun 2020",
         content: [
           {
-            text: "Mentored 30+ students in summer mentorship program on topic data structures and algorithms.",
+            text: "Integrated REST and GraphQL APIs with dynamic React UIs and client-side state management.",
             link: "",
           },
         ],
       },
       {
-        title: "Project Mentee",
-        duration: "Jan-April 2022",
+        title: "Project Mentee - Scalable SaaS",
+        duration: "Jan-Oct 2019",
         content: [
           {
-            text: "Analysed various games like Ludo, Mafia, Snake and Ladder in Python.",
+            text: "Built scalable SaaS dashboards and web portals using Next.js with server-side rendering.",
             link: "",
             tech: [
               {

@@ -7,8 +7,8 @@ export { EDUCATION_LIST } from './education';
 export { PROJECTS } from './projects';
 export { OPEN_SOURCE_CONTRIBUTIONS } from './openSource';
 
-export const RESUME_LINK = "https://drive.google.com/file/d/1fAlHoNfCHkJCkmcpGFzbanTZorT2r2U_/view";
-export const REPO_LINK = "https://github.com/Sudhanva-Nadiger/Portfolio";
+export const RESUME_LINK = "https://drive.google.com/file/d/1Sy8PuMZU5LDIWTozwxz_iuNKGQyOEvaE/view?usp=drive_link";
+export const REPO_LINK = "https://github.com/fullstack635/Portfolio";
 
 export const CONTENT = {
     navs: [
@@ -24,10 +24,10 @@ export const CONTENT = {
             link: "#projects",
             title: "Projects",
         },
-        {
-            link: "#openSrc",
-            title: "Open Source",
-        },
+        // {
+        //     link: "#openSrc",
+        //     title: "Open Source",
+        // },
         {
             link: "#contact",
             title: "Contact Me",
@@ -37,13 +37,13 @@ export const CONTENT = {
         title: `Hello,`,
         sub1: "there",
         sub2: "I am",
-        firstName: "SUDHANVA",
-        LastName: "NADIGER",
+        firstName: "Steven Lai",
+        // LastName: "Lai",
         image: Hero_person,
         hero_content: [
             {
                 count: "",
-                text: "Developer based in India. Software Development Engineer.",
+                text: "Based in Hong Kong Full Stack Developer.",
             },
         ],
     },

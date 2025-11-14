@@ -47,7 +47,7 @@ const Footer = () => (
 
       <div className="mt-10 md:mt-0">
         <img
-          src="https://assets.leetcode.com/users/avatars/avatar_1645015636.png"
+          src="https://assets.leetcode.com/users/stevenlai0970/avatar_1763082515.png"
           alt="Sudhanva Nadiger"
           className="w-[200px] h-[200px] border-2 border-dark_primary relative z-[5] rounded-full"
         />

@@ -5,10 +5,10 @@ export const EDUCATION_LIST = [
   {
     id: "education-1",
     icon: nitk,
-    title: "National Institute of Technology Karnataka, Surathkal",
+    title: "Bogdan Petriceicu Hasdeu State University of Cahul",
     degree: "Bachelor of Technology",
-    duration: "December 2020 - April 2024",
-    content1: "Major: Mechanical Engineering",
+    duration: "Oct 2015 - Oct 2020",
+    content1: "Major: Machine Learning",
     content2: "Minor: Information Technology",
   },
 ];
