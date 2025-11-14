@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import anime from 'animejs';
 import IntroSection from './components/IntroSection';
 import MainSection from './components/MainSection';
+import CursorTrailCanvas from './components/CursorTrailCanvas';
 import './css/style.css';
 
 function App() {
@@ -157,15 +158,18 @@ function App() {
   };
 
   return (
-    <main>
-      {showIntro && (
-        <div ref={introRef}>
-          <IntroSection onEnter={handleEnter} />
-        </div>
-      )}
-      
-      {showMain && <MainSection />}
-    </main>
+    <>
+      <CursorTrailCanvas className="cursor-trail-canvas" />
+      <main>
+        {showIntro && (
+          <div ref={introRef}>
+            <IntroSection onEnter={handleEnter} />
+          </div>
+        )}
+        
+        {showMain && <MainSection />}
+      </main>
+    </>
   );
 }
 

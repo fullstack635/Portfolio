@@ -7,13 +7,10 @@ const IntroSection = ({ onEnter }) => {
   const subtitle = "Front back left right end engineer";
 
   useEffect(() => {
-    // Fade in animation
+    // Fade in animation and subtitle characters at the same time
     const timer = setTimeout(() => {
       setIsVisible(true);
-      // Generate subtitle characters after wrap fades in
-      setTimeout(() => {
-        setSubtitleChars(subtitle.split(''));
-      }, 270);
+      setSubtitleChars(subtitle.split(''));
     }, 0);
 
     return () => clearTimeout(timer);
