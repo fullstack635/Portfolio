@@ -7,66 +7,75 @@ import { motion } from "framer-motion";
 const Project = (props) => {
   return (
     <motion.div
-      className="proj feature-card hover:text-white px-12 py-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent"
+      className="proj feature-card hover:text-white p-0 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent overflow-hidden"
       whileInView={{ y: [-40, 0], opacity: [0, 1] }}
       transition={{ duration: 1, type: 'spring', stiffness: "120" }}
+      whileHover={{
+        scale: 1.02,
+        zIndex: 5,
+        boxShadow: "0 20px 60px rgba(10, 24, 57, 0.35)",
+        transition: { duration: 0.35, type: "spring", stiffness: 220, damping: 18 }
+      }}
     >
-      <div className="flex flex-col sm:-mx-4 sm:flex-row">
+      <div
+        className="relative w-full overflow-hidden bg-white/10"
+        style={{ aspectRatio: "16 / 9" }}
+      >
         <img
-          className="flex-shrink-0 bg-white object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300"
+          className="absolute inset-0 w-full h-full object-cover"
           src={props.image}
-          alt=""
+          alt={props.title}
         />
-
-        <div className="mt-4 sm:mx-4 sm:mt-0">
-          <h1 className="text-xl font-semibold font-poppins text-gray-200 capitalize md:text-2x">
-            {props.title}
-          </h1>
-          <p className="font-poppins font-normal text-dimWhite mt-3">
-            Tech Stack
-          </p>
-          <div className="mt-2 text-gray-500 capitalize dark:text-gray-300">
-            <p className="flex sm:flex-row flex-wrap gap-5">
-              {props.stack.map((tech, index) => (
-                <span
-                  key={tech.id}
-                  index={index}
-                  className="text-dimWhite text-[20px] hover:text-[#8dbbeb] tooltip"
-                >
-                  {React.createElement(tech.icon)}
-                  <span className="tooltiptext">{tech.name}</span>
-                </span>
-              ))}
-            </p>
-          </div>
-        </div>
       </div>
 
-      <p className="mt-8 p font-poppins text-[#414551]">
-        {props.content}
-      </p>
+      <div className="pl-8 px-8 sm:px-10 py-6 sm:py-8 flex flex-col gap-6">
+        <div className="space-y-3">
+          <h1 className="text-xl sm:text-2xl font-semibold font-poppins text-gray-200 capitalize">
+            {props.title}
+          </h1>
+          <p className="font-poppins font-normal text-dimWhite">
+            Tech Stack
+          </p>
+          <div className="mt-1 text-gray-500 capitalize dark:text-gray-300 flex flex-wrap gap-5">
+            {props.stack.map((tech, index) => (
+              <span
+                key={tech.id}
+                index={index}
+                className="text-dimWhite text-[22px] sm:text-[24px] hover:text-[#8dbbeb] tooltip transition-transform duration-200 hover:scale-110"
+              >
+                {React.createElement(tech.icon)}
+                <span className="tooltiptext">{tech.name}</span>
+              </span>
+            ))}
+          </div>
+        </div>
 
-      <div className="flex mt-4 -mx-2">
-        {props.github ? (
-          <a href={props.github} target="_blank">
-            <AiFillGithub
-              size="2rem"
-              className="text-white mr-1 hover:text-[#8dbbeb]"
-            ></AiFillGithub>
-          </a>
-        ) : (
-          ""
-        )}
-        {props.link ? (
-          <a href={props.link} target="_blank">
-            <BsLink45Deg
-              size="2rem"
-              className="text-white hover:text-[#8dbbeb]"
-            ></BsLink45Deg>
-          </a>
-        ) : (
-          ""
-        )}
+        <p className="font-poppins text-[#caddf7] text-base sm:text-lg leading-[30px]">
+          {props.content}
+        </p>
+
+        <div className="flex items-center gap-5">
+          {props.github ? (
+            <a href={props.github} target="_blank" rel="noreferrer">
+              <AiFillGithub
+                size="2.25rem"
+                className="text-white hover:text-[#8dbbeb] transition-transform duration-200 hover:scale-110"
+              ></AiFillGithub>
+            </a>
+          ) : (
+            ""
+          )}
+          {props.link ? (
+            <a href={props.link} target="_blank" rel="noreferrer">
+              <BsLink45Deg
+                size="2.25rem"
+                className="text-white hover:text-[#8dbbeb] transition-transform duration-200 hover:scale-110"
+              ></BsLink45Deg>
+            </a>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </motion.div>
   );

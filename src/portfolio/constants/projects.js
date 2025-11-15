@@ -1,15 +1,15 @@
-import ehippo from '../assets/images/Projects/favicon.ico';
-import uncover from '../assets/images/Projects/uncover.webp'
-import bank from "../assets/images/Projects/bank.jpg";
-import bloodBank from '../assets/images/Projects/bloodbank.webp';
-import bookmark from "../assets/images/Projects/bookmark.jfif";
-import expenseTracker from '../assets/images/Projects/expense-tracker.png';
-import gocli from '../assets/images/Projects/gocli.jpg';
-import keepNotes from "../assets/images/Projects/keepNotes.png";
-import movieLand from "../assets/images/Projects/movieLand.jfif";
-import npm from '../assets/images/Projects/npm.jpg';
-import portfolio from '../assets/images/Projects/portfolio.jpg';
-import videotube from "../assets/images/Projects/video-tube.png";
+import ehippo from '../assets/images/Projects/1.png';
+import uncover from '../assets/images/Projects/2.png'
+import bank from "../assets/images/Projects/6.png";
+import bloodBank from '../assets/images/Projects/3.png';
+import bookmark from "../assets/images/Projects/5.png";
+import expenseTracker from '../assets/images/Projects/12.png';
+import gocli from '../assets/images/Projects/7.png';
+import keepNotes from "../assets/images/Projects/8.png";
+import movieLand from "../assets/images/Projects/9.png";
+import npm from '../assets/images/Projects/10.png';
+import portfolio from '../assets/images/Projects/11.png';
+import videotube from "../assets/images/Projects/4.png";
 
 import {
     AiFillHtml5
@@ -42,12 +42,12 @@ import {
 export const PROJECTS = [
   {
     id: "project-200",
-    title: "E-Hippo",
-    github: "https://github.com/Sudhanva-Nadiger/E-Hippo",
-    link: "https://e-hippo.vercel.app/",
+    title: "Shopify_to_WordPress_sitemap_Integration",
+    github: "https://github.com/stevenlai530/Shopify_to_WordPress_sitemap_Integrator",
+    // link: "https://e-hippo.vercel.app/",
     image: ehippo,
     content:
-      "Ecommerce website with Store and Admin dashboard! Built with NextJs.",
+      "Modern e-commerce platform built with React and Node.js",
     stack: [
       {
         id: "icon-1",
@@ -88,12 +88,12 @@ export const PROJECTS = [
   },
   {
     id: "project-201",
-    title: "Uncoover",
-    github: "https://github.com/Sudhanva-Nadiger/uncover",
-    link: "https://un-cover.vercel.app/",
+    title: "Crypto Trading Dashboard",
+    github: "https://github.com/stevenlai530/ethereum-solidity-course-updated-code",
+    // link: "https://un-cover.vercel.app/",
     image: uncover,
     content:
-      "Write AI generated Cover letter in seconds. (Applying to job doesnt have to suck anymore)",
+      "Real-time cryptocurrency trading dashboard with advanced charts",
     stack: [
       {
         id: "icon-1",
@@ -134,12 +134,12 @@ export const PROJECTS = [
   },
   {
     id: "project-100",
-    title: "Hemo Tracker",
-    github: "https://github.com/Sudhanva-Nadiger/blood-bank-management",
-    link: "https://sbn-bloodbank.onrender.com/",
+    title: "Chatbot-flow-builder",
+    github: "https://github.com/stevenlai530/Chatbot-flow-builder",
+    // link: "https://sbn-bloodbank.onrender.com/",
     image: bloodBank,
     content:
-      "A comprehensive full stack web application for managing blood donatoins using the MERN stack.",
+      "This project is a simple React application built with React Flow and next.js . It demonstrates the implementation of drag and drop nodes with the ability to connect them. The state of the nodes and their connections can be saved and restored.",
     stack: [
       {
         id: "icon-1",
@@ -165,12 +165,12 @@ export const PROJECTS = [
   },
   {
     id: "project-101",
-    title: "React-Leetcode",
+    title: "API Gateway Service",
     github: "https://github.com/Sudhanva-Nadiger/react-leetcode",
-    link: "https://react-leetcode-exampple.vercel.app/",
+    // link: "https://react-leetcode-exampple.vercel.app/",
     image: npm,
     content:
-      "Collection of components for showcasing your leetcode profile in your portfolio ✨.",
+      "Microservices API gateway with authentication and rate limiting",
     stack: [
       {
         id: "icon-1",
@@ -196,12 +196,12 @@ export const PROJECTS = [
   },
   {
     id: "project-1",
-    title: "Bookmark App",
-    github: "https://github.com/Sudhanva-Nadiger/Book-Mark-App",
-    link: "",
+    title: "shopify-cli",
+    github: "https://github.com/stevenlai530/shopify-cli",
+    // link: "",
     image: bookmark,
     content:
-      "A full-stack web application that allows user to bookmark their favorite or frqunetly used website at one place without having it to search it again and again. ",
+      "Shopify CLI is a command line utility used to perform operations on Shopify stores. It makes doing some typical operations in a store much easier, especially if you're doing dev work.",
     stack: [
       {
         id: "icon-1",
@@ -227,12 +227,12 @@ export const PROJECTS = [
   },
   {
     id: "project-2",
-    title: "Bank Landing Page",
+    title: "Solana DeFi App",
     github: "https://github.com/Sudhanva-Nadiger/Modern_Bank_App",
-    link: "https://sudhanva-nadiger.github.io/Modern_Bank_App/index.html",
+    // link: "https://sudhanva-nadiger.github.io/Modern_Bank_App/index.html",
     image: bank,
     content:
-      "A landing page for a bank with modern UI/UX using React and Tailwind.",
+      "Decentralized finance application on Solana blockchain",
     stack: [
       {
         id: "icon-1",
@@ -249,11 +249,11 @@ export const PROJECTS = [
   },
   {
     id: "project-3",
-    title: "Keep Notes",
-    github: "https://github.com/Sudhanva-Nadiger/Keep-Notes-App",
-    link: "",
+    title: "stm-2018.github.io",
+    github: "https://github.com/stevenlai530/stm-2018.github.io",
+    // link: "",
     image: keepNotes,
-    content: "A progressive note taking application developed using React and CSS. ",
+    content: "Decentralized finance application on Solana blockchain",
     stack: [
       {
         id: "icon-1",
@@ -270,12 +270,12 @@ export const PROJECTS = [
   },
   {
     id: "project-4",
-    title: "Movie Land",
-    github: "https://github.com/Sudhanva-Nadiger/Movie_Land-2",
-    link: "",
+    title: "React_FrontEnd_Boilerplate-TypeScript",
+    github: "https://github.com/stevenlai530/stm-2018.github.io",
+    // link: "",
     image: movieLand,
     content:
-      "A web application that easily provides guidance about any Movies & Tv shows.",
+      "Node.js Boilerplate for Front-End using TypeScript and Next.js (React.js).",
     stack: [
       {
         id: "icon-1",
@@ -296,11 +296,11 @@ export const PROJECTS = [
   },
   {
     id: "project-5",
-    title: "Cli Task Manager",
-    github: "https://github.com/Sudhanva-Nadiger/go-cli-task-manager",
+    title: "DevSecOps_Blockchain_App",
+    github: "https://github.com/stevenlai530/DevSecOps_Blockchain_App",
     image: gocli,
     content:
-      "A simple CLI task manager developed using Go.",
+      "DevSecOps Blockchain App – Xác Thực Nguồn Gốc Sản Phẩm",
     stack: [
       {
         id: "icon-1",
@@ -316,12 +316,12 @@ export const PROJECTS = [
   },
   {
     id: "project-7",
-    title: "Video Tube",
-    github: "https://github.com/Sudhanva-Nadiger/My-App",
-    link: "https://video-tube-react.netlify.app/",
+    title: "nextjs-blog-react-admin",
+    github: "https://github.com/stevenlai530/nextjs-blog-react-admin",
+    // link: "https://video-tube-react.netlify.app/",
     image: videotube,
     content:
-      "A frontend web application for video links management. Provides the functionality like adding, editing, deleting, drag and drop, history of watched videos etc.",
+      "个人博客系统.包括博客页面(next.js),博客后台管理(React)和后端(node.js).本项目提供了一个简洁方便的博客方案,可以让发布和管理博客更加轻松.如果对项目有任何建议和想法,欢迎发起issue.",
     stack: [
       {
         id: "icon-1",
@@ -342,12 +342,12 @@ export const PROJECTS = [
   },
   {
     id: "project-8",
-    title: "Personal Portfolio",
-    github: "https://github.com/Sudhanva-Nadiger/",
-    link: "https://sudhanva-nadiger.netlify.app/",
+    title: "instalura",
+    github: "https://github.com/stevenlai530/instalura",
+    // link: "https://sudhanva-nadiger.netlify.app/",
     image: portfolio,
     content:
-      "Personal portfolio website with React and Tailwind CSS.",
+      "Project of Advanced Front-End Bootcamp from Alura using the JAMStack.",
     stack: [
       {
         id: "icon-1",
@@ -368,12 +368,12 @@ export const PROJECTS = [
   },
   {
     id: "project-9",
-    title: "Expense Tracker",
-    github: "https://github.com/Sudhanva-Nadiger/Personal_Expense_Tracker",
-    link: "",
+    title: "Shopify SaaS Clone using WordPress, WooCommerce, WPCS & k8s",
+    github: "https://github.com/stevenlai530/wp-shopify-clone",
+    // link: "",
     image: expenseTracker,
     content:
-      "An application developed using Flutter that helps to track the overall expenses made.",
+      "This is a Shopify Clone build using various technologies to illustrate how easy it is to build SaaS products using WordPress",
     stack: [
       {
         id: "icon-1",
