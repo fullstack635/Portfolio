@@ -9,7 +9,7 @@ const Navbar = () => {
   const { navs } = CONTENT
 
   return (
-    <nav className="w-full z-10 flex justify-between items-center absolute left-0 top-0 bg-transparent">
+    <nav className="w-full z-10 flex justify-between items-center absolute left-0 top-0 bg-transparent backdrop-blur-md px-6 py-4">
       {/* Logo */}
       <Logo />
 

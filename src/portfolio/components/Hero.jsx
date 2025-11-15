@@ -74,7 +74,7 @@ const Hero = () => {
 						transition={{ duration: 1, type: 'spring', stiffness: "120" }}
 					>
 						<a href={linkedInLink} target="_blank">
-							<Button styles={'w-full bg-letsConnect font-bold mt-3'} text={'Lets connect'} />
+							<Button styles={'w-full bg-letsConnect font-bold text-xl mt-3'} text={'Lets connect'} />
 						</a>
 					</motion.div>
 				</div>

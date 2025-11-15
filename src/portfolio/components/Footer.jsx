@@ -6,7 +6,7 @@ import { AiFillGithub } from "react-icons/ai";
 const Footer = () => (
   <footer id="contact" className=" bg-secondaryLinear sm:px-16 px-6">
     <div
-      className={`flex md:flex-row flex-col-reverse py-6 xl:max-w-[1280px] w-full mx-auto gap-y-4 items-center justify-center`}
+      className={`flex md:flex-row flex-col-reverse py-6 w-full mx-auto gap-y-4 items-center justify-center`}
     >
       <div className={"md:flex-1 flex-col flex justify-center items-center md:items-start"}>
         <h2 className="text-xl font-bold font-poppins dark:text-white hover:text-gray-700 dark:hover:text-gray-300">

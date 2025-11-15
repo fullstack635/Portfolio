@@ -1,15 +1,24 @@
-import React from 'react'
+import React from "react";
+import favicon from "../assets/images/Projects/discord.png";
 
-const Logo = ({isLoading}) => {
+const Logo = ({ isLoading }) => {
   return (
-    <a href="#home">
-        <p className={`w-full bg-transparent p-5 font-semibold ${isLoading ? "text-white":"text-dark_primary"}  font-Paprika`}>
-          <span className="text-[#4452d4]" >&lt;&gt; </span> 
-          Steven 
-          <span className="text-[#4452d4]"> &lt;/&gt;</span>
-        </p>
+    <a
+      href="https://discord.com/users/stevenlai0970"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img
+        src={favicon}
+        alt="Steven Lai avatar"
+        className={`rounded-full border-2 object-cover ${
+          isLoading ? "border-white" : "border-dark_primary"
+        } shadow-lg`}
+        width={60}
+        height={60}
+      />
     </a>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;
